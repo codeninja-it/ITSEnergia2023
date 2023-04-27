@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "primaApp", "primaApp\primaApp.csproj", "{C6D8099D-215E-4411-9133-1B5C31C228DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondaApp", "SecondaApp\SecondaApp.csproj", "{E4BAC146-F127-48AE-90D8-6A90F2173C03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondaApp", "SecondaApp\SecondaApp.csproj", "{E4BAC146-F127-48AE-90D8-6A90F2173C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerzaApp", "TerzaApp\TerzaApp.csproj", "{1FD12E40-2B28-40EE-B514-26B0BE2D4352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E4BAC146-F127-48AE-90D8-6A90F2173C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4BAC146-F127-48AE-90D8-6A90F2173C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4BAC146-F127-48AE-90D8-6A90F2173C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD12E40-2B28-40EE-B514-26B0BE2D4352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD12E40-2B28-40EE-B514-26B0BE2D4352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD12E40-2B28-40EE-B514-26B0BE2D4352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD12E40-2B28-40EE-B514-26B0BE2D4352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
