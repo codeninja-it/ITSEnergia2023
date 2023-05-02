@@ -1,10 +1,8 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-bool casella = true; // bool: true, false
+﻿bool casella = true; // bool: true, false
 bool muro = false;
 char carattere = 'c';
 string testo = "ciao a tutti!";
-int numeroIntero = 1;
+uint numeroIntero = 1;
 double numeroDecimale = 1.2;
 
 bool[] riga = { true, false, true, true, true, true };
@@ -24,23 +22,36 @@ bool[,] scacchiera = {
                         {true, false, true, true, false, true},
                         {true, true,  true, true, true,  true },
                         {true, false, false, false, true, false },
-                        {true, false, true, true, true, true }
+                        {true, true, false, true, true, true }
                      };
 
-for (int x=0; x < scacchiera.GetLength(0); x = x + 1)
+void disegnaScacchiera(int[] utente)
 {
-    for(int y=0; y < scacchiera.GetLength(1); y = y + 1)
+    int xMax = scacchiera.GetLength(0);
+    int yMax = scacchiera.GetLength(1);
+    for(int x=0; x < xMax; x++)
     {
-        if (scacchiera[x,y])
+        for(int y=0; y < yMax; y++)
         {
-            Console.Write("0");
-        } else
-        {
-            Console.Write("1");
+            if (utente[0] == x && utente[1] == y)
+            {
+                Console.Write("A");
+            } else
+            {
+                //{x,y}
+                if (scacchiera[x,y] == true)
+                {
+                    Console.Write("_");
+                } else
+                {
+                    Console.Write("X");
+                }
+            }
         }
-        
+        Console.WriteLine();
     }
-    Console.WriteLine();
+    Console.ReadLine();
+    Console.Clear();
 }
 
 
@@ -62,10 +73,12 @@ attraversa(partenza, arrivo);
 
 void attraversa(int[] da, int[] a)
 {
+    disegnaScacchiera(da);
     scacchiera[da[0], da[1]] = false;
     if (da[0] == a[0] && da[1] == a[1])
     {
         Console.WriteLine("Sono arrivato!");
+        Console.ReadLine();
     } else
     {
         int x = da[0]; // +1 -1
@@ -76,7 +89,7 @@ void attraversa(int[] da, int[] a)
             int[] destra = { x + 1, y };
             attraversa(destra, a);
         }
-        if(x-1 < 0 && scacchiera[x-1, y])
+        if(x-1 > 0 && scacchiera[x-1, y])
         {
             // posso spostarmi a sinistra perchè sono ancora nella scacchiera e non c'è un muro
             int[] sinistra = { x - 1, y };
