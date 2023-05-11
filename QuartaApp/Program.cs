@@ -36,10 +36,14 @@ void analizza(string comando)
 
     } else if (comando == "vedi")
     {
+        string chi = chiedi("Chi stai cercando?");
         for (int i=0; i < rubrica.Length; i++)
         {
             Contatto selezionato = rubrica[i];
-            Console.WriteLine($"{i}: {selezionato.nome} {selezionato.cognome} {selezionato.telefono} {selezionato.creazione}");
+            if(selezionato.nome.Contains(chi))
+            {
+                Console.WriteLine($"{i}: {selezionato.nome} {selezionato.cognome} {selezionato.telefono} {selezionato.creazione}");
+            }            
         }
     } else if (comando == "pulisci")
     {
