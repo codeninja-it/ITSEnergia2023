@@ -1,4 +1,5 @@
 using System.Web;
+using System.Text.RegularExpressions;
 
 namespace SettimaApp
 {
@@ -7,6 +8,12 @@ namespace SettimaApp
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private string EsercizioRegEx(string testo)
+        {
+            testo = Regex.Replace(testo, @"[aeiou\W\d]", "", RegexOptions.IgnoreCase);
+            return "";
         }
 
         private string Esercizio(string testo)

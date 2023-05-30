@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuartaApp", "QuartaApp\Quar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuintaApp", "QuintaApp\QuintaApp.csproj", "{ED1E467F-864B-4331-9F38-1D06889FBF9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SestaApp", "SestaApp\SestaApp.csproj", "{9E01C500-A9AE-4050-8123-9BFD62A824A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SestaApp", "SestaApp\SestaApp.csproj", "{9E01C500-A9AE-4050-8123-9BFD62A824A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettimaApp", "SettimaApp\SettimaApp.csproj", "{486BBF7E-DAAA-4825-972D-4956521DF854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SettimaApp", "SettimaApp\SettimaApp.csproj", "{486BBF7E-DAAA-4825-972D-4956521DF854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegEx", "RegEx\RegEx.csproj", "{AA28F9A9-63DF-4E0E-8E95-5FA2AF15DC4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{486BBF7E-DAAA-4825-972D-4956521DF854}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486BBF7E-DAAA-4825-972D-4956521DF854}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486BBF7E-DAAA-4825-972D-4956521DF854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA28F9A9-63DF-4E0E-8E95-5FA2AF15DC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA28F9A9-63DF-4E0E-8E95-5FA2AF15DC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA28F9A9-63DF-4E0E-8E95-5FA2AF15DC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA28F9A9-63DF-4E0E-8E95-5FA2AF15DC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
